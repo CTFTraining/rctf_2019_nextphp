@@ -1,0 +1,11 @@
+version: '2'
+services:
+  nextphp:
+    build: .
+    image: ctftraining/rctf_2019_nextphp
+    volumes:
+      - ./flag:/flag
+    ports:
+      - "0.0.0.0:8081:80"
+    mem_limit: 2048M
+    restart: always
