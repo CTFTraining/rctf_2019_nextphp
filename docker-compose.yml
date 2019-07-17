@@ -1,7 +1,7 @@
 version: '2'
 services:
   nextphp:
-    build: .
+    # build: .
     image: ctftraining/rctf_2019_nextphp
     volumes:
       - ./flag:/flag
