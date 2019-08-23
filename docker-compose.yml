@@ -3,9 +3,9 @@ services:
   nextphp:
     # build: .
     image: ctftraining/rctf_2019_nextphp
-    volumes:
-      - ./flag:/flag
     ports:
       - "0.0.0.0:8081:80"
+    environment:
+      - FLAG=flag{test_flag}
     mem_limit: 2048M
     restart: always
